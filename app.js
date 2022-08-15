@@ -8,10 +8,8 @@ require('dotenv').config()
 const app = express()
 
 mongoose 
-.connect(
-    //sting de conexión de la base de datos
-    
-    'mongodb+srv://hernas:hernas2005@development.2xqf1jr.mongodb.net/stock-app?retryWrites=true&w=majority'
+    .connect(
+        'mongodb+srv://hernas:hernas2005@development.2xqf1jr.mongodb.net/stock-app?retryWrites=true&w=majority)' 
     )
     .then (result =>{
         app.listen(PORT, () => {
