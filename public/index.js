@@ -7,7 +7,7 @@ button.addEventListener('click', (e) => {
     const name = inputName.value;
     const price = inputPrice.value;
 
-    fetch('http://localhost:4000/api/v1/products', {
+    fetch('/api/v1/products', {
         method: 'POST',
         headers: {
         'content-type': 'application/json',

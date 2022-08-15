@@ -13,7 +13,7 @@ mongoose
     )
     .then (result =>{
         app.listen(PORT, () => {
-            console.log ('servidor escuchando en el puerto', PORT)  
+            console.log ('servidor escuchando en el puerto')  
             //se ejecuta cuando el servidor esta escuchando en el puerto'
         })
     })
@@ -36,7 +36,7 @@ mongoose
     app.use(express.json())
     
 
-    app.post('/api/v1/products', async (req, res, next) => {
+    app.post('/api/v1/products', async (req, res,) => {
         //
         const newProduct = new Product(req.body)
         
@@ -50,4 +50,4 @@ mongoose
     app.use(express.static(path.join(__dirname, 'public')))
 
 
-    const PORT = process.env.PORT || 4000
+    const PORT = process.env.PORT
